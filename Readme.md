@@ -1,3 +1,5 @@
+This code was made by `https://github.com/xchwarze/kismet-openwrt-builder` go check his github, I just change the builder for my specific case.
+
 # Kismet for OpenWRT 23 - Custom Build Repository
 
 Welcome to the custom build repository for Kismet 2023 on OpenWRT 23. This repository provides the necessary stepts to build Kismet manually for OpenWRT 23. As of the 2023 release, Kismet is no longer included in the official OpenWRT repositories, necessitating manual compilation for users who wish to run this powerful network detection and monitoring tool on their devices.
