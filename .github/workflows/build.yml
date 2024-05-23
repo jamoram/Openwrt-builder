@@ -7,15 +7,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      RELEASE_VERSION: '23.05.3/ramips/mt7621'
-      SDK_TAR: 'openwrt-sdk-23.05.3-ramips-mt7621_gcc-12.3.0_musl.Linux-x86_64.tar.xz'
-      SDK_FOLDER: 'openwrt-sdk-23.05.3-ramips-mt7621_gcc-12.3.0_musl.Linux-x86_64'
-      SDK_URL: 'https://downloads.openwrt.org/releases/23.05.3/targets/ramips/mt7621/openwrt-sdk-23.05.3-ramips-mt7621_gcc-12.3.0_musl.Linux-x86_64.tar.xz'
+      RELEASE_VERSION: '23.05.3/bcm27xx/bcm2710'
+      SDK_TAR: 'openwrt-sdk-21.02.3-bcm27xx-bcm2710_gcc-8.4.0_musl.Linux-x86_64.tar.xz'
+      SDK_FOLDER: 'openwrt-sdk-21.02.3-bcm27xx-bcm2710_gcc-8.4.0_musl.Linux-x86_64'
+      SDK_URL: 'https://downloads.openwrt.org/releases/21.02.3/targets/bcm27xx/bcm2710/openwrt-sdk-21.02.3-bcm27xx-bcm2710_gcc-8.4.0_musl.Linux-x86_64.tar.xz'
       BUILD_DIR: '${{ github.workspace }}'
       SDK_DIR: '${{ github.workspace }}/openwrt-sdk'
       KISMET_REPO_DIR: '${{ github.workspace }}/kismet-packages'
       KISMET_PACKAGE: '${{ github.workspace }}/kismet-packages/openwrt/kismet-openwrt'
-      IPK_OUTPUT_DIR: '${{ github.workspace }}/openwrt-sdk/bin/packages/mipsel_24kc/kismet'
+      IPK_OUTPUT_DIR: '${{ github.workspace }}/openwrt-sdk/bin/packages/aarch64_cortex-a53/kismet'
       CURRENT_REPO_DIR: '${{ github.workspace }}/release-repo'
 
     steps:
